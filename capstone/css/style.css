@@ -16,16 +16,9 @@ nav a {
   color: black;
 }
 
-.aboutPage, 
+.aboutPage,
 .aboutPage:visited {
   color: #ec5242;
-  color: #ec5242;
-}
-
-
-.menu-button,
-.menu-button:visited {
-  color: black;
 }
 
 .item,
@@ -107,6 +100,9 @@ nav {
 
 .location {
   color: #5a5a5a;
+  font-size: 1rem;
+  color: #7f7f7f;
+  font-weight: lighter;
 }
 
 .homeContent {
@@ -122,12 +118,6 @@ nav {
 .homeContent .description {
   color: #636363;
   background-color: #f7f7f7;
-}
-
-.location {
-  font-size: 1rem;
-  color: #7f7f7f;
-  font-weight: lighter;
 }
 
 .email {
@@ -153,6 +143,11 @@ nav {
   padding: 1rem;
   width: max-content;
   font-size: 1.5rem;
+  color: black;
+}
+
+.menu-button:visited {
+  color: black;
 }
 
 .expanded .menu-content {
