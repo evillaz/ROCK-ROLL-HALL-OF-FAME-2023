@@ -89,7 +89,7 @@ function getArtistContent({
   img, name, award, description,
 }) {
   return `<div class="imgHolder">
-            <img src="${img.src}" class="${img.alt}">
+            <img src="${img.src}" alt="${img.alt}">
           </div>
           <div class="artistDetail">
             <div class="artistHolder">
