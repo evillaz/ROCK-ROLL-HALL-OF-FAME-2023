@@ -33,12 +33,14 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [My Portfolio] <a name="about-project"></a>
+# 📖 [ROCK & ROLL HALL OF FAME 2023] <a name="about-project"></a>
 
-This is one of the first projects on the early days on microverse program.
+This is one of the first capstone projects i realized.
 
-**[My portfolio]** is a html project with css styling used to introduce ouselfs as programmer through a Portfolio
+**[ROCK & ROLL HALL OF FAME 2023]** is a responsive website project with css styling used to present the anually event of ROCK & ROLL HALL OF FAME
+
 - Integrate linters to the project. Learned about it's importance and how to make a robust project implementing linters
+- Implement js to manipulate data and create dynamic pages
 - Accomplish the requirements through a project based on the HTML and CSS
 
 
@@ -71,11 +73,12 @@ This is one of the first projects on the early days on microverse program.
 
 ### Key Features <a name="key-features"></a>
 
-- **A warm introduction into the development world**
-- **linters applied to the project**
+- **A warm introduction into the ROCK & ROLL HALL OF FAME**
 - **First understandings on flex box management for HTML & CSS**
 - **Firs applies of Flexbox and Css gridbox**
-- **Project with all green lights on linters**
+- **Responsive design**
+- **JS manipulation of DOM elements**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
