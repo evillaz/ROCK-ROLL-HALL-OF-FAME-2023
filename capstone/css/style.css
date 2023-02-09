@@ -16,8 +16,21 @@ nav a {
   color: black;
 }
 
+.aboutPage, 
 .aboutPage:visited {
   color: #ec5242;
+  color: #ec5242;
+}
+
+
+.menu-button,
+.menu-button:visited {
+  color: black;
+}
+
+.item,
+.item:visited {
+  color: black;
 }
 
 a:visited {
@@ -34,6 +47,11 @@ a:visited {
   color: #fff;
   font-size: 0.5rem;
   align-items: center;
+}
+
+.topBar a,
+.topBar a:visited {
+  color: #fff;
 }
 
 .mainProgram i {
@@ -66,8 +84,8 @@ nav {
   position: absolute;
   inset: 0;
   z-index: -1;
-  opacity: 0.1;
-  background-image: url("../images/mainBg6.jpg");
+  opacity: 0.2;
+  background: linear-gradient(rgba(247, 247, 247, 0.2), rgba(247, 247, 247, 0.2)), url("../images/mainBg61.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -75,12 +93,20 @@ nav {
 
 .main .title {
   font-weight: bold;
-  background-image: url("../images/mainBg6.jpg");
+  background: linear-gradient(rgba(246, 21, 3, 0.9), rgba(246, 21, 3, 0.9)), url("../images/mainBg61.jpg");
   background-size: cover;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: black;
+}
+
+.date {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 200;
+  color: #5a5a5a;
+}
+
+.location {
+  color: #5a5a5a;
 }
 
 .homeContent {
@@ -95,7 +121,7 @@ nav {
 
 .homeContent .description {
   color: #818181;
-  background-color: #fdfdf6;
+  background-color: #f7f7f7;
 }
 
 .location {
@@ -112,15 +138,15 @@ nav {
 .menu {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  overflow: scroll;
   color: #545454;
   margin: 0;
+  width: max-content;
 }
 
 .expanded {
+  width: 80%;
   height: 100vh;
-  background: linear-gradient(rgba(253, 253, 246, 0.8), rgba(253, 253, 246, 0.8)), url("../images/mainBg6.jpg");
+  background: linear-gradient(rgba(247, 247, 247, 0.8), rgba(247, 247, 247, 0.8)), url(../images/mainBg61.jpg);
 }
 
 .menu-button {
@@ -405,8 +431,13 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.9);
   }
 
+  .home .greet {
+    font-size: 1.5rem;
+  }
+
   .about .greet {
     display: block;
+    font-size: 1.5rem;
   }
 
   .location {

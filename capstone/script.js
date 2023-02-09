@@ -5,9 +5,8 @@ function menu() {
 
 document.querySelector('.open').addEventListener('click', menu);
 document.querySelector('.close').addEventListener('click', menu);
-document.querySelector('.menu-content').addEventListener('click', menu);
-document.querySelectorAll('.menu-content a').forEach((item) => {
-  item.addEventListener('click', menu);
+document.querySelectorAll('.menu-content').forEach((link) => {
+  link.addEventListener('click', menu);
 });
 
 function more() {
@@ -114,14 +113,14 @@ function setTitle() {
 }
 
 function setArtists(artist) {
-  const artistDetail = document.createElement('div');
+  const artistDetail = document.createElement('article');
   artistDetail.className = 'artist';
   artistDetail.innerHTML = getArtistContent(artist);
   return artistDetail;
 }
 
 function setArtistsMore(artist) {
-  const artistDetail = document.createElement('div');
+  const artistDetail = document.createElement('article');
   artistDetail.className = 'artist more';
   artistDetail.innerHTML = getArtistContent(artist);
   return artistDetail;
