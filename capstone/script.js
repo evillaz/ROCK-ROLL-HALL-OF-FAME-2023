@@ -139,10 +139,9 @@ function loadFeaturedArtists() {
   for (let i = 0; i < artistInfo.length; i += 1) {
     if (i <= 2) {
       setArtistContent(artistInfo[i]);
-    }
-    else {
+    } else {
       setArtistContentMore(artistInfo[i]);
-    }
+      }
   }
 }
 

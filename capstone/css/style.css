@@ -73,7 +73,6 @@ nav {
   font-weight: bold;
   background-image: url("../images/mainBg6.jpg");
   background-size: cover;
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-stroke-width: 0.1px;
@@ -592,7 +591,6 @@ footer {
     padding: 0 1rem;
   }
 
-
   .artistDetail {
     gap: 0.5rem;
     padding: 0.5rem 0;
@@ -926,7 +924,6 @@ footer {
     gap: 0.5rem;
     padding: 0.5rem;
   }
-
 
   .artist h3 {
     font-size: 1rem;
