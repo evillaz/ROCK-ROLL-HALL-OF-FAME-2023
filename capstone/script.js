@@ -3,7 +3,8 @@ function menu() {
   document.querySelector('.menu-content').toggleAttribute('hidden');
 }
 
-document.querySelector('.menu').addEventListener('click', menu);
+document.querySelector('.open').addEventListener('click', menu);
+document.querySelector('.close').addEventListener('click', menu);
 document.querySelector('.menu-content').addEventListener('click', menu);
 document.querySelectorAll('.menu-content a').forEach((item) => {
   item.addEventListener('click', menu);
