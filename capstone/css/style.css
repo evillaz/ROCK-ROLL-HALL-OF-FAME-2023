@@ -41,7 +41,7 @@ nav {
   display: none;
 }
 
-.menu-items {
+.nav-items {
   display: flex;
   color: black;
 }
@@ -50,14 +50,14 @@ nav {
   display: flex;
 }
 
- .main {
+.main {
   display: flex;
   flex-direction: column;
   isolation: isolate;
   position: relative;
  }
 
- .main::after {
+.main::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -67,7 +67,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
- }
+}
  
 .main .title {
   font-weight: bold;
@@ -80,42 +80,77 @@ nav {
   -webkit-text-stroke-color: black;
 }
  
- .homeContent {
+.homeContent {
   display: flex;
   flex-direction: column;
- }
+}
 
- .greet{
+.greet{
   color: #EC5242;
   font-weight: lighter;
- }
+}
 
- .homeContent .description {
+.homeContent .description {
   color: #818181;
   background-color: #fdfdf6;
- }
+}
 
- .date {
-  color: #22252a;
- }
+.date {
+color: #2 
+}
 
- .location {
+.location {
   font-size: 1rem;
   color: #7f7f7f;
   font-weight: lighter;
- }
- 
- .email {
+}
+
+.email {
   font-weight: bold;
   text-decoration: underline;
- }
-
- .menu-button {
-  padding: 0.5rem 1rem;
-  font-size: 2.5rem;
-  width: max-content;
-  color: #545454;
 }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  overflow: scroll;
+  color: #545454;
+  margin: 0;
+}
+
+.expanded {
+  height: 100vh;
+  background: linear-gradient(rgba(253,253,246,0.8), rgba(253,253,246,0.8)), url("../images/mainBg6.jpg");
+}
+
+.menu-button {
+  padding: 1rem;
+  width: max-content;
+  font-size: 1.5rem;
+}
+
+.expanded .menu-content {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  height: 100%;
+}
+
+.expanded .menu-items {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.menu .logo img{
+  height: auto;
+}
+
 
 .mainProgram {
   display: flex;
@@ -171,8 +206,6 @@ nav {
 
 .mainProgram .title {
   color: #fff;
-  -webkit-text-stroke-width: 0.2px;
-  -webkit-text-stroke-color: black;
  }
 
 .pastEvents {
@@ -287,11 +320,91 @@ nav {
   background-color: #fff;
 }
 
+.menu .close {
+  display: none;
+}
+
+#artistSection {
+  display: flex;
+  flex-direction: column;
+}
+
+#artistSection .holder {
+  display: flex;
+  flex-direction: column;
+  order: 0;
+}
+
+#featuredArtists {
+  order: 1;
+}
+
+.artist {
+  display: flex;
+  flex-direction: row;
+}
+
+.artistDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.seeMore {
+  display: none;
+}
+
+footer {
+  flex-direction: column;
+}
+
+
+.imgHolder {
+  display: flex;
+  width: 48%;
+  align-items: flex-end;
+  justify-content: end;
+  background-image: url("../images/scratched.jpg");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
+
+.artist img {
+  width: 85%;
+  height: 85%;
+}
+
+.artistDetail {
+  width: 100%;
+}
+
+.artist span {
+  font-style: italic;
+  color: #ec5242;
+  line-height: 0.8rem;
+}
+
+.artist holder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.artist .underLine {
+  height: 0;
+  width: 10%;
+  border-bottom: 1px solid #d3d3d3
+}
+
 @media only screen and (max-width: 768px) {
   .main .home {
-    padding: 1rem 1rem 4rem;
+    padding: 5rem 1rem 4rem;
     gap: 1rem;
   }
+
+  .mainProgram .title {
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+   }
 
   .homeContent .home {
     gap: 1rem;
@@ -301,7 +414,7 @@ nav {
   .homeContent .description {
     padding: 1rem;
     font-size: 0.8rem;
-    border: 1px solid #d2d2d2;
+    border: 1px solid rgba(255,255,255,0.9);
   }
 
   .about .greet {
@@ -314,7 +427,7 @@ nav {
 
   main .about {
     gap: 2rem;
-    padding: 1rem 1rem 2rem;
+    padding: 5rem 1rem 2rem;
   }
 
   .mainProgram .title {
@@ -471,6 +584,100 @@ nav {
     flex-direction: column;
     gap: 1rem;
   }
+
+  .expanded .open {
+    display: none;
+  }
+
+  .expanded .close {
+    display: flex;
+    z-index: 2;
+  }
+
+  #artistSection{
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  #artistSection .holder {
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  #featuredArtists {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .artist {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .artistDetail {
+    gap: 0.5rem;
+  }
+
+  .imgHolder {
+    display: flex;
+    width: 48%;
+    align-items: flex-end;
+    justify-content: end;
+    background-image: url("../images/scratched.jpg");
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+  }
+
+  .artistDetail {
+    padding: 0.5rem 0;
+  }
+
+  .artist img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .artist h3 {
+    font-size: 1rem;
+  }
+
+  .artist span {
+    font-size: 0.6rem;
+  }
+
+  .artist p {
+    font-size: 0.5rem;
+  }
+
+  .more {
+    display: none;
+  }
+
+  .seeMore {
+    display: flex;
+    width: 100%;
+  }
+
+  .seeMoreBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 2rem;
+    padding: 1rem 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    cursor: pointer;
+  }
+
+  .seeMoreBtn i {
+    color: #ec5242;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -483,7 +690,7 @@ nav {
     font-size: 2rem;
   }
 
-  .title {
+  .homeContent .title {
     font-size: 3rem;
   }
 
@@ -527,11 +734,11 @@ nav {
     color: #ec5242;
   }
 
-  .menu-button {
+  .menu {
     display: none;
   }
 
-  .menu-items {
+  .nav-items {
     font-size: 0.6rem;
     width: 100%;
     gap:10%;
@@ -725,7 +932,40 @@ nav {
     background-color: #3e3e3e;
     color: #fff;
   }
+  
+  #artistSection {
+    padding: 2rem 14% 5rem;
+    gap: 2rem;
+  }
 
+  #artistSection .holder {
+    font-size: 0.7rem;
+    }
+
+  #featuredArtists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 0.5rem;
+  }
+
+  .artistDetail {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+
+  .artist h3 {
+    font-size: 1rem;
+  }
+
+  .artist span {
+    font-size: 0.7rem;
+  }
+
+  .artist p {
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+  }
 }
 
 @media only screen and (min-width: 1240px) {

@@ -19,22 +19,35 @@
       <a href="#">Logout</a>
     </div>
     <nav>
-    <div class="navbar">
-      <a class="logo" href="home.html" ><img src="images/logo.svg"></a>
-      <div class="menu-items">
-        <a class="aboutPage" href="#">About</a>
-        <a href="#">Program</a>
-        <a href="#">Join</a>
-        <a href="#">Sponsor</a>
-        <a href="#">News</a>
-        <a class="rockHall" href="#">Rock Hall</a>
+      <div class="navbar">
+        <a class="logo" href="home.html" ><img src="images/logo.svg"></a>
+        <div class="nav-items">
+          <a class="aboutPage" href="about.html">About</a>
+          <a href="home.html#program">Program</a>
+          <a href="home.html#join">Join</a>
+          <a href="about.html#sponsor">Sponsor</a>
+          <a href="about.html#news">News</a>
+          <a class="rockHall" href="about.html#rockhall">Rock Hall</a>
+        </div>
+      </div>
+    </nav>
+    <div class="menu">
+      <a class="menu-button open" href="#"><i class="fa-solid fa-bars"></i></a>
+      <a class="menu-button close" href="#"><i class="fa-solid fa-xmark"></i></a>
+      <div hidden class="menu-content">
+        <a class="logo" href="home.html" ><img src="images/logo.svg"></a>
+        <div class="menu-items">
+          <a class="aboutPage" href="about.html">About</a>
+          <a href="home.html#program">Program</a>
+          <a href="home.html#join">Join</a>
+          <a href="about.html#sponsor">Sponsor</a>
+          <a href="about.html#news">News</a>
+        </div>
       </div>
     </div>
-    </nav>
   </header>
   <main>
     <div class="main">
-      <a class="menu-button" href="#"><i class="fa-solid fa-bars menu-button"></i></a>
       <div class="homeContent about">
         <h2 class="greet">"Hello! Rock & Roll Fans"</h2>
         <div class="holder">
@@ -59,7 +72,7 @@
       </p> 
       <img class="aboutLogo" src="images/logo.svg">
     </div>
-    <div class="pastEvents">
+    <div id="news" class="pastEvents">
       <div class="titleWrap">
         <div class="holder">
           <h2 class="title">See the past R&R Hall of Fame Events</h2>
@@ -84,7 +97,7 @@
     </div>
   </main>
   <footer class="aboutFooter">
-    <div class="aboutPartners">
+    <div id="sponsor" class="aboutPartners">
       <div class="holder">
         <h2 class="title">Partner</h2>
         <div class="underLine"></div>
@@ -100,7 +113,7 @@
       </div>
       <span></span>
     </div>
-    <div class="bottom">
+    <div id="rockhall" class="bottom">
       <img class="footerLogo" src="images/logo.svg">
       <div class="footerDesc">
         <p>
@@ -110,7 +123,7 @@
       </div>    </div>
   </footer>
   <script src="https://kit.fontawesome.com/4a3cf72623.js" crossorigin="anonymous"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
 </body>

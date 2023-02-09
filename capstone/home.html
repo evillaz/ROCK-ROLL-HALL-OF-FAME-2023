@@ -20,20 +20,33 @@
     <nav>
     <div class="navbar">
       <a class="logo" href="home.html" ><img src="images/logo.svg"></a>
-      <div class="menu-items">
+      <div class="nav-items">
         <a class="aboutPage" href="about.html">About</a>
-        <a href="#">Program</a>
-        <a href="#">Join</a>
-        <a href="#">Sponsor</a>
-        <a href="#">News</a>
-        <a class="rockHall" href="#">Rock Hall</a>
+        <a href="home.html#program">Program</a>
+        <a href="home.html#join">Join</a>
+        <a href="#sponsor">Sponsor</a>
+        <a href="about.html#news">News</a>
+        <a class="rockHall" href="#rockhall">Rock Hall</a>
       </div>
     </div>
     </nav>
+    <div class="menu">
+      <a class="menu-button open" href="#"><i class="fa-solid fa-bars"></i></a>
+      <a class="menu-button close" href="#"><i class="fa-solid fa-xmark"></i></a>
+      <div hidden class="menu-content">
+        <a class="logo" href="home.html" ><img src="images/logo.svg"></a>
+        <div class="menu-items">
+          <a class="aboutPage" href="about.html">About</a>
+          <a href="home.html#program">Program</a>
+          <a href="home.html#join">Join</a>
+          <a href="#sponsor">Sponsor</a>
+          <a href="about.html#news">News</a>
+        </div>
+      </div>
+    </div>
   </header>
   <main>
     <div class="main">
-      <a class="menu-button" href="#"><i class="fa-solid fa-bars menu-button"></i></a>
       <div class="homeContent home">
         <h2 class="greet">"Hello! Rock & Roll Fans"</h2>
         <h1 class="title">ROCK & ROLL HALL OF FAME 2023</h1>
@@ -42,11 +55,11 @@
         <h3 class="location">@ The Rock and Roll Hall of Fame Museum, Cleveland</h3>
       </div>
     </div>
-    <div class="mainProgram">
+    <div id="program" class="mainProgram">
       <div class="holder">
-      <h2 class="title">Main Program</h2>
-      <div class="underLine"></div>
-    </div>
+        <h2 class="title">Main Program</h2>
+        <div class="underLine"></div>
+      </div>
       <div class="programElements">
         <div class="elements">
           <i class="fa-sharp fa-solid fa-hourglass-start"></i>
@@ -75,64 +88,14 @@
         </div>
       </div>
       <a href="#" class="programDetails">SEE THE WHOLE PROGRAM</a>
-      <button class="programBtn">Join ROCK & ROLL Hall of Fame Tour 2023</button>
+      <button id="join" class="programBtn">Join ROCK & ROLL Hall of Fame Tour 2023</button>
     </div>
-    /<div>
-      <h2>Featured Artists</h2>
-      <div class="artist">
-        <img src="images/KateBush.jpg" class="art1">
-        <div>
-          <h3>Kate Bush</h3>
-          <span>2022 Sync of the Year Award</span>
-          <p>A spellbinding visionary, the singer, songwriter, multi-instrumentalist, and producer Kate Bush created a unique space in rock. </p>
-        </div>
-      </div>
-      <div class="artist">
-        <img src="images/SherylCrow.jpg" class="art1">
-        <div>
-          <h3>Sheryl Crow</h3>
-          <span>2019 Clio Music Impact Award</span>
-          <p>Sheryl Crow’s influence reverberates through classic 1990s rock, pop, country, folk, blues, and the work of countless singer-songwriters.</p>
-        </div>
-      </div>
-      <div class="artist">
-        <img src="images/MissyElliott.jpg" class="art1">
-        <div>
-          <h3>Missy Elliot</h3>
-          <span>2018 Essence Black Women in Music Visionary Award</span>
-          <p>Songwriter, groundbreaking producer, label executive, and video trendsetter, Missy “Misdemeanor” Elliott was crucial to crafting the Virginia Beach sound that took over the airwaves in the late 1990s and 2000s.</p>        
-        </div>
-      </div>
-      <div class="artist">
-        <img src="images/IronMaiden.jpg" class="art1">
-        <div>
-          <h3>Iron Maiden</h3>
-          <span>2016 Echo Award for Best International Rock Group</span>
-          <p>Iron Maiden created the blueprint for how heavy metal bands should look, sound, and tour. Throughout the 1980s, the British group released seven high-octane albums that solidified it as one of rock’s biggest bands.</p>        
-        </div>
-      </div>
-      <div class="artist">
-        <img src="images/CyndiLauper.jpg" class="art1">
-        <div>
-          <h3>Cindy Lauper</h3>
-          <span>2016 WhatsOnStage Award for Best New Musical</span>
-          <p>Lauper broke down barriers for waves of future artists and empowered them to perform as their unique, authentic selves.</p>  
-        </div>
-      </div>
-      <div class="artist">
-        <img src="images/GeorgeMichael.jpg" class="art1">
-        <div>
-          <h3>George Michael</h3>
-          <span>1996 MTV Europe Music Award for Best Male</span>
-          <p>George Michael and his incomparable vision and drive propelled him to superstardom, and he became the most-played artist on British radio from 1984 to 2004 and one of the best-selling artists of all time.</p>
-        </div>
-      </div>
-      <button></button>
-    </div>
-   
+    <section id="artistSection">
+      <div id="featuredArtists"></div>
+    </section>
   </main>
-  <footer>
-    <div class="partners">
+  <footer class="more">
+    <div id="sponsor" class="partners">
       <div class="holder">
         <h2 class="title">Partner</h2>
         <div class="underLine"></div>
@@ -148,7 +111,7 @@
       </div>
       <span></span>
     </div>
-    <div class="bottom">
+    <div id="rockhall" class="bottom">
       <img class="footerLogo" src="images/logo.svg">
       <div class="footerDesc">
         <p>
@@ -156,10 +119,16 @@
         </p>
         <span class="footerDetail"><br>Rock Hall is a registered 501(c)(3) non-profit in the United States.</span>
       </div>
-      
     </div>
   </footer>
+  <div></div>
+  <div class="seeMore">
+    <button class="seeMoreBtn">
+      <span>More</span>
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+  </div>
   <script src="https://kit.fontawesome.com/4a3cf72623.js" crossorigin="anonymous"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
