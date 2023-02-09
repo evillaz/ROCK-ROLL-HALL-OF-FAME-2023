@@ -141,7 +141,7 @@ function loadFeaturedArtists() {
       setArtistContent(artistInfo[i]);
     } else {
       setArtistContentMore(artistInfo[i]);
-      }
+    }
   }
 }
 
