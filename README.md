@@ -85,6 +85,8 @@ This is one of the first capstone projects i realized.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+See a [Live Demo short video!!!](https://www.loom.com/share/8c6628508b8e407e93da00dbe5d2cf01)!!
+
 We got our first live demo thanks to GitHub pages hosting>>>>
 
 - [Live Demo!!!](https://evillaz.github.io/My-Portfolio/)
