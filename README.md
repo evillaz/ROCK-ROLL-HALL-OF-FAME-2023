@@ -51,10 +51,11 @@ This is one of the first capstone projects i realized.
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">No client build for this project</a></li>
+    <li><a href="https://reactjs.org/">HTML</a></li>
+    <li><a href="https://reactjs.org/">CSS</a></li>
+    <li><a href="https://reactjs.org/">Java Script</a></li>
   </ul>
 </details>
-
 <details>
   <summary>Server</summary>
   <ul>
@@ -208,9 +209,9 @@ If you like this project  don't doubt on make any comments or try to reach me ou
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+I would like to thank Cindy Shin for her original design of Creative Commons Global Summit 2015, as it served as an inspiration for this project.
 
-I would like to thank my family for the encourage on taking this strong step into the developing carreer
-
+ *[Original Design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
