@@ -9,17 +9,15 @@ document.querySelectorAll('.menu-content a').forEach((item) => {
   item.addEventListener('click', menu);
 });
 
-
 function more() {
   const seeMore = document.querySelectorAll('.more');
-  seeMore.forEach(more => {
+  seeMore.forEach((more) => {
     more.style.display = 'flex';
-  })
-  document.querySelector('.seeMoreBtn').style.display= 'none';
+  });
+  document.querySelector('.seeMoreBtn').style.display = 'none';
 }
 
 document.querySelector('.seeMoreBtn').addEventListener('click', more);
-
 
 const artistInfo = [
   {
@@ -30,7 +28,7 @@ const artistInfo = [
     },
     name: 'Kate Bush',
     award: '2022 Sync of the Year Award',
-    description: 'A spellbinding visionary, the singer, songwriter, multi-instrumentalist, and producer Kate Bush created a unique space in rock.'
+    description: 'A spellbinding visionary, the singer, songwriter, multi-instrumentalist, and producer Kate Bush created a unique space in rock.',
   },
   {
     id: 'a2',
@@ -82,11 +80,10 @@ const artistInfo = [
     award: '1996 MTV Europe Music Award for Best Male',
     description: 'George Michael and his incomparable vision and drive propelled him to superstardom, and he became the most-played artist on British radio from 1984 to 2004,',
   },
-]
+];
 
 const section = document.getElementById('artistSection');
 const artists = document.getElementById('featuredArtists');
-
 
 function getArtistContent({
   img, name, award, description,
@@ -95,11 +92,11 @@ function getArtistContent({
             <img src="${img.src}" class="${img.alt}">
           </div>
           <div class="artistDetail">
-          <holder>
-            <h3>${name}</h3>
-            <span>${award}</span>
-            <div class="underLine"></div>
-          </holder>
+            <div class="artistHolder">
+              <h3>${name}</h3>
+              <span>${award}</span>
+              <div class="underLine"></div>
+            </div>
             <p>${description}</p>
           </div>
           `;
@@ -107,12 +104,12 @@ function getArtistContent({
 
 function setTitle() {
   const title = document.createElement('div');
-  title.className= 'holder';
+  title.className = 'holder';
   title.innerHTML = `
       <h2 class="title">Featured Artists</h2>
       <div class="underLine"></div>
     `;
-    section.appendChild(title);
+  section.appendChild(title);
 }
 
 function setArtists(artist) {
@@ -140,16 +137,13 @@ function setArtistContentMore(artist) {
 function loadFeaturedArtists() {
   setTitle();
   for (let i = 0; i < artistInfo.length; i += 1) {
-    if( i <= 2){
+    if (i <= 2) {
       setArtistContent(artistInfo[i]);
     }
     else {
-      setArtistContentMore(artistInfo[i])
+      setArtistContentMore(artistInfo[i]);
     }
   }
 }
 
 loadFeaturedArtists();
-
-
-

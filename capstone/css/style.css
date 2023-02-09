@@ -8,13 +8,12 @@ body {
   margin: 0;
 }
 
-
 a {
   text-decoration: none;
 }
 
 .aboutPage:visited {
-  color: #ec5242
+  color: #ec5242;
 }
 
 a:visited {
@@ -39,6 +38,7 @@ a:visited {
 
 nav {
   display: none;
+  background-color: #fff;
 }
 
 .nav-items {
@@ -55,7 +55,7 @@ nav {
   flex-direction: column;
   isolation: isolate;
   position: relative;
- }
+}
 
 .main::after {
   content: "";
@@ -68,7 +68,7 @@ nav {
   background-position: center;
   background-size: 100% 100%;
 }
- 
+
 .main .title {
   font-weight: bold;
   background-image: url("../images/mainBg6.jpg");
@@ -79,24 +79,20 @@ nav {
   -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: black;
 }
- 
+
 .homeContent {
   display: flex;
   flex-direction: column;
 }
 
-.greet{
-  color: #EC5242;
+.greet {
+  color: #ec5242;
   font-weight: lighter;
 }
 
 .homeContent .description {
   color: #818181;
   background-color: #fdfdf6;
-}
-
-.date {
-color: #2 
 }
 
 .location {
@@ -121,7 +117,7 @@ color: #2
 
 .expanded {
   height: 100vh;
-  background: linear-gradient(rgba(253,253,246,0.8), rgba(253,253,246,0.8)), url("../images/mainBg6.jpg");
+  background: linear-gradient(rgba(253, 253, 246, 0.8), rgba(253, 253, 246, 0.8)), url("../images/mainBg6.jpg");
 }
 
 .menu-button {
@@ -147,16 +143,19 @@ color: #2
   justify-content: space-around;
 }
 
-.menu .logo img{
-  height: auto;
+.artist img {
+  width: 85%;
+  height: 85%;
 }
 
+.menu .logo img {
+  height: auto;
+}
 
 .mainProgram {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #272a31;
   background: url("../images/programBg5.jpg");
 }
 
@@ -167,8 +166,8 @@ color: #2
 .elements {
   display: flex;
   align-items: center;
-  background: rgba(66, 66, 66, .40);
-  border: 1px solid rgba(66, 66, 66, .40);
+  background: rgba(66, 66, 66, 0.4);
+  border: 1px solid rgba(66, 66, 66, 0.4);
 }
 
 .elements:hover {
@@ -193,7 +192,7 @@ color: #2
   display: none;
   padding: 2rem;
   font-size: 0.8rem;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
   background-color: #ec5242;
   color: #fff;
@@ -206,7 +205,7 @@ color: #2
 
 .mainProgram .title {
   color: #fff;
- }
+}
 
 .pastEvents {
   display: flex;
@@ -217,27 +216,27 @@ color: #2
   display: flex;
   flex-direction: column;
   color: #fff;
- }
+}
 
 .h1 {
-  background: linear-gradient(rgba(236,82,66,0.8), rgba(236,82,66,0.8)), url("../images/pastEvents1.jpg");
+  background: linear-gradient(rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url("../images/pastEvents1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .h2 {
-  background: linear-gradient(rgba(236,82,66,0.8), rgba(236,82,66,0.8)), url("../images/pastEvents2.jpg");
+  background: linear-gradient(rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url("../images/pastEvents2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .year {
   font-weight: bold;
- }
+}
 
 .name {
   font-weight: lighter;
- }
+}
 
 .partners {
   display: flex;
@@ -246,6 +245,7 @@ color: #2
 
 .aboutPartners {
   background-color: #4e4f4f;
+  display: none;
 }
 
 .aboutPartners .title {
@@ -306,18 +306,10 @@ main .about {
   flex-direction: column;
 }
 
-.aboutPartners {
-  display: none;
-}
-
 header {
   position: fixed;
   z-index: 5;
   width: 100%;
-}
-
-nav {
-  background-color: #fff;
 }
 
 .menu .close {
@@ -347,6 +339,7 @@ nav {
 .artistDetail {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .seeMore {
@@ -356,7 +349,6 @@ nav {
 footer {
   flex-direction: column;
 }
-
 
 .imgHolder {
   display: flex;
@@ -368,31 +360,22 @@ footer {
   background-size: 50% 50%;
 }
 
-.artist img {
-  width: 85%;
-  height: 85%;
-}
-
-.artistDetail {
-  width: 100%;
-}
-
 .artist span {
   font-style: italic;
   color: #ec5242;
   line-height: 0.8rem;
 }
 
-.artist holder {
+.artist .artistHolder {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.3rem;
 }
 
 .artist .underLine {
   height: 0;
   width: 10%;
-  border-bottom: 1px solid #d3d3d3
+  border-bottom: 1px solid #d3d3d3;
 }
 
 @media only screen and (max-width: 768px) {
@@ -404,7 +387,9 @@ footer {
   .mainProgram .title {
     -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: black;
-   }
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
 
   .homeContent .home {
     gap: 1rem;
@@ -414,7 +399,7 @@ footer {
   .homeContent .description {
     padding: 1rem;
     font-size: 0.8rem;
-    border: 1px solid rgba(255,255,255,0.9);
+    border: 1px solid rgba(255, 255, 255, 0.9);
   }
 
   .about .greet {
@@ -430,12 +415,8 @@ footer {
     padding: 5rem 1rem 2rem;
   }
 
-  .mainProgram .title {
-    font-size: 1.2rem;
-    font-weight: lighter;
-  }
-
   .programBtn {
+    display: flex;
     font-weight: lighter;
     margin: 0 9%;
   }
@@ -451,7 +432,7 @@ footer {
   }
 
   .creativeLogo {
-  padding: 1rem 1rem 3rem;
+    padding: 1rem 1rem 3rem;
   }
 
   .creativeLogo .holder {
@@ -485,25 +466,25 @@ footer {
     gap: 1rem;
   }
 
- .year {
+  .year {
     font-size: 2rem;
   }
 
- .name {
+  .name {
     font-size: 1rem;
   }
 
- .programDetails {
+  .programDetails {
     display: none;
   }
- 
- .partners {
+
+  .partners {
     flex-direction: column;
     padding: 2rem 1rem;
     height: 70%;
     gap: 1rem;
   }
-  
+
   .aboutPartners {
     display: flex;
     flex-direction: column;
@@ -515,14 +496,14 @@ footer {
   .partners .title {
     font-size: 1.5rem;
   }
-  
+
   .partnersWrapper {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
 
- .partner {
+  .partner {
     width: auto;
     height: 4rem;
   }
@@ -549,12 +530,12 @@ footer {
   .elements i {
     width: 10%;
   }
-  
+
   .elements h3 {
     font-size: 1rem;
     width: 20%;
   }
-  
+
   .elements p {
     font-size: 0.8rem;
     width: 70%;
@@ -576,10 +557,6 @@ footer {
     padding: 1rem;
   }
 
-  .programBtn {
-    display: flex;
-  }
-
   .events {
     flex-direction: column;
     gap: 1rem;
@@ -594,7 +571,7 @@ footer {
     z-index: 2;
   }
 
-  #artistSection{
+  #artistSection {
     justify-content: center;
     padding: 2rem 0;
   }
@@ -614,10 +591,11 @@ footer {
     gap: 1rem;
     padding: 0 1rem;
   }
-  
+
 
   .artistDetail {
     gap: 0.5rem;
+    padding: 0.5rem 0;
   }
 
   .imgHolder {
@@ -628,10 +606,6 @@ footer {
     background-image: url("../images/scratched.jpg");
     background-repeat: no-repeat;
     background-size: 50% 50%;
-  }
-
-  .artistDetail {
-    padding: 0.5rem 0;
   }
 
   .artist img {
@@ -678,7 +652,6 @@ footer {
   .seeMoreBtn i {
     color: #ec5242;
   }
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -704,7 +677,7 @@ footer {
     font-size: 0.5rem;
     line-height: 1rem;
     padding: 0.5rem 1rem;
-    border: 2.5px solid rgba(255,255,255,0.9);
+    border: 2.5px solid rgba(255, 255, 255, 0.9);
   }
 
   .topBar {
@@ -722,7 +695,7 @@ footer {
     align-items: center;
     width: 100%;
   }
-  
+
   .rockHall {
     font-size: 0.8rem;
     white-space: nowrap;
@@ -742,11 +715,11 @@ footer {
   .nav-items {
     font-size: 0.6rem;
     width: 100%;
-    gap:10%;
+    gap: 10%;
     align-items: center;
     justify-content: flex-end;
   }
- 
+
   .logo {
     width: 25%;
     max-width: 6rem;
@@ -768,7 +741,7 @@ footer {
     gap: 0.2rem;
     padding-bottom: 1rem;
   }
-  
+
   .mainProgram {
     gap: 2rem;
     padding: 3rem 13% 4rem;
@@ -785,7 +758,7 @@ footer {
     width: 20%;
   }
 
-  .elements h3{
+  .elements h3 {
     display: flex;
     height: 2rem;
     align-items: center;
@@ -849,7 +822,7 @@ footer {
   .footerDetail {
     display: flex;
   }
-  
+
   .about {
     padding: 10rem 18% 6rem;
     gap: 3rem;
@@ -882,7 +855,7 @@ footer {
     font-size: 1.4rem;
     width: max-content;
   }
-  
+
   .logoDesc {
     font-size: 0.8rem;
     line-height: 133%;
@@ -900,7 +873,7 @@ footer {
     padding: 3rem 20% 5rem;
     gap: 3rem;
   }
-  
+
   .pastEvents .title {
     font-size: 1.5rem;
   }
@@ -933,7 +906,7 @@ footer {
     background-color: #3e3e3e;
     color: #fff;
   }
-  
+
   #artistSection {
     padding: 2rem 14% 5rem;
     gap: 2rem;
@@ -941,7 +914,7 @@ footer {
 
   #artistSection .holder {
     font-size: 0.7rem;
-    }
+  }
 
   #featuredArtists {
     display: grid;
