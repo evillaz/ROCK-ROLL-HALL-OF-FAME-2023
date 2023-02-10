@@ -16,8 +16,8 @@ nav a {
   color: black;
 }
 
-.aboutPage,
-.aboutPage:visited {
+.page,
+.page:visited {
   color: #ec5242;
 }
 
@@ -277,7 +277,6 @@ nav {
 }
 
 .partners .title {
-  color: #fff;
   font-weight: lighter;
 }
 
@@ -522,6 +521,7 @@ footer {
   }
 
   .partners .title {
+    color: #fff;
     font-size: 1.5rem;
   }
 
@@ -832,6 +832,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 3rem 18%;
     gap: 2rem;
   }
@@ -841,7 +842,7 @@ footer {
   }
 
   .footerDesc {
-    width: 70%;
+    width: max-content;
     font-size: 0.6rem;
     line-height: 0.6rem;
     height: 100%;
@@ -966,6 +967,10 @@ footer {
   .artist p {
     font-size: 0.5rem;
     line-height: 0.8rem;
+  }
+
+  .partners .title {
+    color: #9e9ea0;
   }
 }
 
