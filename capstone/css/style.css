@@ -822,6 +822,7 @@ footer {
 
   .partners .title {
     font-size: 1.5rem;
+    color: #9e9ea0;
   }
 
   .partner {
@@ -967,10 +968,6 @@ footer {
   .artist p {
     font-size: 0.5rem;
     line-height: 0.8rem;
-  }
-
-  .partners .title {
-    color: #9e9ea0;
   }
 }
 
