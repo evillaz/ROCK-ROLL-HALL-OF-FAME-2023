@@ -277,6 +277,7 @@ nav {
 }
 
 .partners .title {
+  color: #9e9ea0;
   font-weight: lighter;
 }
 
@@ -521,7 +522,6 @@ footer {
   }
 
   .partners .title {
-    color: #fff;
     font-size: 1.5rem;
   }
 
@@ -822,7 +822,6 @@ footer {
 
   .partners .title {
     font-size: 1.5rem;
-    color: #9e9ea0;
   }
 
   .partner {
