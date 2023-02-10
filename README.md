@@ -33,12 +33,14 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [My Portfolio] <a name="about-project"></a>
+# 📖 [ROCK & ROLL HALL OF FAME 2023] <a name="about-project"></a>
 
-This is one of the first projects on the early days on microverse program.
+This is one of the first capstone projects i realized.
 
-**[My portfolio]** is a html project with css styling used to introduce ouselfs as programmer through a Portfolio
+**[ROCK & ROLL HALL OF FAME 2023]** is a responsive website project with css styling used to present the anually event of ROCK & ROLL HALL OF FAME
+
 - Integrate linters to the project. Learned about it's importance and how to make a robust project implementing linters
+- Implement js to manipulate data and create dynamic pages
 - Accomplish the requirements through a project based on the HTML and CSS
 
 
@@ -49,10 +51,11 @@ This is one of the first projects on the early days on microverse program.
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">No client build for this project</a></li>
+    <li><a href="https://reactjs.org/">HTML</a></li>
+    <li><a href="https://reactjs.org/">CSS</a></li>
+    <li><a href="https://reactjs.org/">Java Script</a></li>
   </ul>
 </details>
-
 <details>
   <summary>Server</summary>
   <ul>
@@ -71,20 +74,23 @@ This is one of the first projects on the early days on microverse program.
 
 ### Key Features <a name="key-features"></a>
 
-- **A warm introduction into the development world**
-- **linters applied to the project**
+- **A warm introduction into the ROCK & ROLL HALL OF FAME**
 - **First understandings on flex box management for HTML & CSS**
 - **Firs applies of Flexbox and Css gridbox**
-- **Project with all green lights on linters**
+- **Responsive design**
+- **JS manipulation of DOM elements**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+See a [Live Demo short video!!!](https://www.loom.com/share/8c6628508b8e407e93da00dbe5d2cf01)!!
+
 We got our first live demo thanks to GitHub pages hosting>>>>
 
-- [Live Demo!!!](https://evillaz.github.io/My-Portfolio/)
+- [Live Demo!!!](https://evillaz.github.io/capstone-project1/capstone/about.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,9 +209,9 @@ If you like this project  don't doubt on make any comments or try to reach me ou
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+I would like to thank Cindy Shin for her original design of Creative Commons Global Summit 2015, as it served as an inspiration for this project.
 
-I would like to thank my family for the encourage on taking this strong step into the developing carreer
-
+ *[Original Design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
@@ -228,6 +234,8 @@ I would like to thank my family for the encourage on taking this strong step int
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
+This project is [MIT](/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
