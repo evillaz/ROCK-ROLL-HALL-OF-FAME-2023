@@ -1,0 +1,20 @@
+<script type="text/javascript">
+  function newrow() {
+  document.getElementById("customTable").innerHTML += "<tr><td><input type='text'></td><td><input type='text'></td><td><button onclick='del(this)'>X</button></td></tr>";
+  }
+  
+  function del(field) {
+  field.parentNode.parentNode.outerHTML = "";
+  }
+  </script>
+  
+  <body onload="newrow()">
+  <fieldset>
+      <legend>Legend</legend>
+      <table>
+          <tbody id="customTable">
+          </tbody>
+      </table>
+  <button onclick="newrow()">Add</button> 
+  </fieldset>
+  </body>
